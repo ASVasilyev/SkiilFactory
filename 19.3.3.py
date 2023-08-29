@@ -1,4 +1,5 @@
 import requests
+import json
 
 # Добавление питомца POST
 res = requests.post(f"https://petstore.swagger.io/v2/pet", headers={'accept': 'application/json'},
@@ -18,5 +19,5 @@ res = requests.put(f"https://petstore.swagger.io/v2/pet", headers={'accept': 'ap
 print(res.text)
 
 # Удаление питомца DELETE
-res = requests.put(f"https://petstore.swagger.io/v2/pet", headers={'accept': 'application/json'}, json={'id': 1616})
+res = requests.delete(f"https://petstore.swagger.io/v2/pet/1616", headers={'accept': 'application/json'})
 print(res.text)
