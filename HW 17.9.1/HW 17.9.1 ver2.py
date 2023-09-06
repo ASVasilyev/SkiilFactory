@@ -35,7 +35,7 @@ print(sort_array)
 
 if my_element < sort_array[0]:
     print('Введенный элемент меньше первого в списке.')
-elif my_element == sort_array[len(sort_array) - 1]:
+elif my_element == sort_array[0]:
     print('Введенный элемент равен первому в списке.')
 elif my_element > sort_array[len(sort_array) - 1]:
     print('Введенный элемент больше последнего в списке.')
